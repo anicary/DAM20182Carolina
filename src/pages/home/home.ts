@@ -18,7 +18,7 @@ export class HomePage {
     user: '',
     password: ''
   };
-
+ 
   constructor(public navCtrl: NavController, public apirest: ApiRest) {
     //this.credentials.user="Israel";
     //this.credentials.password ="12345";
@@ -31,7 +31,7 @@ export class HomePage {
     console.log(this.credentials.password);
     console.log(this.apirest.users);
     let isUser = false;
-    this.apirest.users.forEach(element => {
+    this.apirest.users.forEach(element => { 
       if (this.credentials.user === element.usuario
         && this.credentials.password === element.password
       ) {

@@ -27,4 +27,5 @@ export class UserPage {
     onPageWillEnter() {
         console.log('Enter on Page');
     }
+    
 }
