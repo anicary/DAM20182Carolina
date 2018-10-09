@@ -7,7 +7,7 @@ export class ApiRest{
     public users:any;
 //recibe el parametro y crea el atributo
     constructor(private http:Http){
-
+ 
     }
 
     getUsers():void{
