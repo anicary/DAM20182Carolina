@@ -1,0 +1,25 @@
+<ion-header>
+        <ion-navbar>
+            <ion-title>
+                Bienvenido {{nombre_user}}   
+               
+            </ion-title>
+            <ion-avatar >
+                <img width="50" [src]="photo_user">
+              </ion-avatar>
+        </ion-navbar>
+    </ion-header>
+    
+    <ion-content>
+        <ion-card #myCard *ngFor="let place of placesrest.places">
+            <img [src]="place.photo"/>
+            <ion-card-content>
+                <ion-card-title>
+                    {{place.category}}
+                </ion-card-title>
+                <p>
+                    {{place.name}}
+                </p>
+            </ion-card-content>
+        </ion-card>
+    </ion-content>
